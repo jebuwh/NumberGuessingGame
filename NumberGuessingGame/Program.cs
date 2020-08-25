@@ -18,8 +18,8 @@ namespace NumberGuessingGame
               
         
                 {
-                    while (userInput != favNumber)
-                    {
+                  while (userInput != favNumber)
+                   {
                         if (userInput < favNumber)
                         {
                             Console.WriteLine("Sorry, the number I am thinking of is higher than " + userInput + " Try and guess again!");
@@ -32,12 +32,13 @@ namespace NumberGuessingGame
                             Console.WriteLine("Guess Again:");
                             userInput = int.Parse(Console.ReadLine());
                         }
-
+                        else
+                            Console.WriteLine("Congrats, " + favNumber + " is correct!");
 
                     }
                 }
-                if (userInput == favNumber);
-                    Console.WriteLine("Congrats, " + favNumber + " is correct!");
+                
+                    
                 
             }   
 
